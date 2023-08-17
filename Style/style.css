@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+body > img {
+  width: 70px;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+form {
+  margin: 20px 0 10vh 0;
+  height: 60vh;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #0fadff;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  width: 100%;
+}
+
+form label {
+  background-color: white;
+  font-size: 0.8rem;
+}
+
+form input {
+  padding: 0px 5px;
+  height: 30px;
+  border: none;
+}
+
+form input:focus {
+  outline: none;
+}
+
+.Username-Container,
+.Password-Container {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 1px;
+  background: linear-gradient(to bottom, #ffffff 90%, #000000 90%);
+}
+
+.Password-Container section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+.Password-Container input {
+  width: 100%;
+}
+.Password-Container section img {
+  display: none;
+  padding: 5px;
+  height: 30px;
+  opacity: 0.5;
+}
+
+.Password-Container + section {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 100%;
+}
+
+.Password-Container + section span {
+  margin: 0px 5px;
+  font-size: 0.7rem;
+  color: lightslategrey;
+}
+
+.Password-Container + section + a {
+  height: 100%;
+  margin: 70px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: #0fadff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+form > input {
+  height: 10%;
+  width: 70%;
+  align-self: center;
+  color: white;
+  background-color: rgb(151, 151, 151);
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+.visible {
+  display: block !important;
+}
+
+@media (max-width: 500px) {
+  form {
+    width: 80vw;
+  }
+}
